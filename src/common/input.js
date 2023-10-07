@@ -287,7 +287,7 @@ var StandardAmountInput = /** @class */ (function (_super) {
         _this._typeName = "StandardAmountInput";
         _this._typeID = undefined;
         _this.amount = buffer_1.Buffer.alloc(8);
-        _this.amountValue = new bn_js_1.default(0);
+        _this.amountValue = new bn_js_1(0);
         /**
          * Returns the amount as a {@link https://github.com/indutny/bn.js/|BN}.
          */

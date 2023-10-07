@@ -79,7 +79,7 @@ var ImportTx = /** @class */ (function (_super) {
         if (sourceChainID === void 0) { sourceChainID = buffer_1.Buffer.alloc(32, 16); }
         if (importIns === void 0) { importIns = undefined; }
         if (outs === void 0) { outs = undefined; }
-        if (fee === void 0) { fee = new bn_js_1.default(0); }
+        if (fee === void 0) { fee = new bn_js_1(0); }
         var _this = _super.call(this, networkID, blockchainID) || this;
         _this._typeName = "ImportTx";
         _this._typeID = constants_1.EVMConstants.IMPORTTX;
