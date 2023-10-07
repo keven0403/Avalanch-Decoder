@@ -129,7 +129,7 @@ export const main = async (code: string): Promise<any> => {
             }))
         }))
         let exportTx = {
-            Type: txToObject._typeName,
+            Type: txToObject.unsignedTx.transaction._typeName,
             UnsignedTx: {
                 Type: txToObject.unsignedTx._typeName,
                 CodecID: txToObject.unsignedTx.codecID,
@@ -208,7 +208,7 @@ export const main = async (code: string): Promise<any> => {
             }))
         }))
         let importTx = {
-            Type: txToObject._typeName,
+            Type: txToObject.unsignedTx.transaction._typeName,
             UnsignedTx: {
                 Type: txToObject.unsignedTx._typeName,
                 CodecID: txToObject.unsignedTx.codecID,
